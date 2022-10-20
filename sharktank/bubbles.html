@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubbles</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+    img {
+        width: 100px;
+        height: 100px;
+    }
+</style>
+<body>
+    <nav>
+        <ul>
+        <li style="float: left;"><a href="./index.html">Digital Fidget</a></li>
+        <li style="float: left;"><a href="./about.html">About</a></li>
+        <li><a href="./spinner.html">Spinner</a></li>
+        <li><a href="./bubbles.html">Bubbles</a></li>
+        <li><a href="./cube.html">Cube</a></li>
+        </ul>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+        <div class="categories-buttons" >
+            <img src="./images/button unpopped.png" class="my">
+            <img src="./images/button unpopped.png" class="my">
+            <img src="./images/button unpopped.png" class="my">
+            <img src="./images/button unpopped.png" class="my">
+            <img src="./images/button unpopped.png" class="my">
+            <img src="./images/button unpopped.png" class="my">
+            <img src="./images/button unpopped.png" class="my">
+            <img src="./images/button unpopped.png" class="my">
+            <img src="./images/button unpopped.png" class="my">
+            <img src="./images/button unpopped.png" class="my">
+            <img src="./images/button unpopped.png" class="my">
+            <img src="./images/button unpopped.png" class="my">
+            <img src="./images/button unpopped.png" class="my">
+            <img src="./images/button unpopped.png" class="my">
+            <img src="./images/button unpopped.png" class="my">
+            <img src="./images/button unpopped.png" class="my">
+
+        </div>    
+     </div>
+
+
+
+<script>
+let toggle = true;
+document.querySelectorAll('.my').forEach(img => {
+  img.addEventListener('click', function() {
+    //handle click
+    
+    toggle = !toggle;
+    if (toggle){
+        img.src = './images/button popped.png';
+        
+    }    
+    else {
+        img.src = './images/button unpopped.png'
+
+    }
+  })
+})
+</script>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="script.js"></script>
+</body> 
+
+</html>

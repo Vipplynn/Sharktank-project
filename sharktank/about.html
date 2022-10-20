@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lan="en">
+<title>About</title>
+<head>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <style>
+        .pb {
+            position: fixed;
+            top: 0;
+            height: 5px;
+            width: 100%;
+            z-index: 2;
+          }
+    </style>
+    <script>
+        window.onscroll = () => {
+        let scrollTop = window.scrollY;
+        let docHeight = document.body.offsetHeight;
+        let winHeight = window.innerHeight;
+        let scrollPercent = scrollTop / (docHeight - winHeight);
+        let scrollPercentRounded = Math.round(scrollPercent * 100);
+        document.querySelector(".pb").style.background = `linear-gradient(to right, #ff9999 ${scrollPercentRounded}%, #eee ${scrollPercentRounded}%)`;
+        };
+    </script>
+    </script>
+        <div class="pb"></div>  
+    <nav>
+        <ul>
+        <li style="float: left;"><a href="./index.html">Digital Fidget</a></li>
+        <li style="float: left;"><a href="./about.html">About</a></li>
+        <li><a href="./spinner.html">Spinner</a></li>
+        <li><a href="./bubbles.html">Bubbles</a></li>
+        <li><a href="./cube.html">Cube</a></li>
+        </ul>
+    </nav>
+<div>    
+    <img src="./images/spinner.gif">
+</div>
+<div>
+    <img src="./images/cube.gif">
+</div>
+<div>
+    <img src="./images/pop it.png">
+</div>
+
+
+</body>
+
+</html>
